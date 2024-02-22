@@ -25,7 +25,13 @@ def fizzbuzz(n):
 			tmp_result.append("Buzz")
 		else:
 			tmp_result.append(str(i))
-	print(" ".join(tmp_result))
+	length = len(tmp_result)
+	for res in tmp_result:
+		if length == 1:
+			print(res)
+		else:
+			print(res, end=" ")
+		length -= 1
 
 
 if __name__ == '__main__':
